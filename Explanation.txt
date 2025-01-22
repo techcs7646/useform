@@ -1,0 +1,16 @@
+useForm:
+ -We import useForm from react-hook-form to manage the form state and validation.
+useForm Hook:
+ -The hook returns methods:
+   -register: Links input fields to form validation rules.
+   -handleSubmit: Handles form submission and invokes the onSubmit function.
+   -formState: { errors }: Contains error messages for invalid fields.
+Form Fields:
+ -Name: Required field. If not filled, shows an error message.
+ -Email: Required and validated with a regular expression for proper email format.
+ -Password: Required and must be at least 6 characters long.
+Styling:
+ -Simple inline styling is used for layout and input fields.
+ -Error messages are displayed below each input field in red.
+Form Submission:
+ -When the form is submitted and all fields are valid, the onSubmit function is called, and the form data is logged to the console.
